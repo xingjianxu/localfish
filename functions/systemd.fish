@@ -1,5 +1,3 @@
-set uname (uname)
-if test "$uname" = "Linux"
 
   function sc-start -d "systemctl start service"
     sudo systemctl start $argv
@@ -16,5 +14,3 @@ if test "$uname" = "Linux"
   function sc-status -d "systemctl status service"
     sudo systemctl status $argv
   end
-
-end
