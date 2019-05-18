@@ -1,3 +1,4 @@
+set uname (uname)
 if test "$uname" = "Linux"
 
   function sc-start -d "systemctl start service"
